@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html,body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(238, 231, 231);
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(206, 202, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#cards{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 2rem;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#cards > div{
+    width: 339px;
+    height: 252px;
+    background-color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#cards > div > button{
+    width: 100%;
+}
+
+.remove-btn{
+    background-color: rgb(238, 231, 231);
+}
+.remove-btn:hover{
+    background-color: rgb(212, 201, 201)
+}
+
+.read-btn{
+    background-color: rgb(137, 225, 137);
+}
+
+.read-btn:hover{
+    background-color: rgb(124, 207, 124);
+}
+
+p{
+    margin: 0;
+    
+}
+
+.add{
+    width: 280px;
+    height: 380px;
+    background-color: rgb(238, 231, 231);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    cursor:default;
+    overflow: auto;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.add > *{
+    margin: 0;
+}
+
+.add-modal{
+    width: 280px;
+    height: 380px;
+    padding: 20px;
+    background-color: rgb(238, 231, 231);
+    border-radius: 10px;
+}
+
+.modal { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    
+  }
+
+button{
+    font-size: 25px;
+    font-weight: bolder;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: rgb(238, 231, 231);
+    border: none;
+    cursor: pointer;
+}
+
+.add > button{
+    width: 90%;
+    background-color: rgb(144, 225, 144);
+}
+
+.add > button:hover{
+    background-color: rgb(98, 190, 98);
+}
+
+input[type=text], input[type=number]{
+    font-size: 25px;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.isRead{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.checked{
+    accent-color: white ;
+    width: 20px;
+    height: 20px;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
